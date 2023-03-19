@@ -266,7 +266,7 @@ nav ul li a:hover::after {
 
 .skills-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
     grid-gap: 40px;
     margin-top: 50px;
@@ -277,13 +277,18 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    align-items: center;
 }
 
 .skill img {
-    width: 90%;
+    align-items: center;
+    width: 75%;
     border-radius: 10px;
     display: block;
-    height: 30vh;
+    height: 20vh;
+    justify-content: center;
+    margin-left: 20px;
 
 }
 
