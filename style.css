@@ -69,6 +69,8 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 300px;
+    /* border: 1px solid greenyellow; */
+    scroll-margin: 100px;
 }
 
 .container {
@@ -178,6 +180,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     color: #ababab;
+    scroll-margin: 100px;
 }
 
 .row {
@@ -261,13 +264,13 @@ nav ul li a:hover::after {
 /* -----------------------------skills-------------------------- */
 #skills {
     padding: 50px 0;
+    scroll-margin: 100px;
 
 }
 
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -296,7 +299,7 @@ nav ul li a:hover::after {
 /* ---------------------projects-section------------------------------ */
 #projects {
     padding: 50px 0;
-
+    scroll-margin: 100px;
 }
 
 .project-list {
@@ -330,7 +333,7 @@ nav ul li a:hover::after {
 /* ----------------------github section---------------------------------- */
 #githubs {
     padding: 50px 0;
-
+    scroll-margin: 100px;
 }
 
 .github-list {
@@ -457,8 +460,8 @@ form .btn2 {
 #resume-button-2,#resume-link-1{
     display: block;
     height: 50px;
-    width: 250px;
-    background: #ff004f;
+    width: auto;
+    background: black;
     text-align: center;
     padding: 5px 10px;
     /* position: absolute; */
@@ -470,6 +473,12 @@ form .btn2 {
     right: 0;
     border-radius: 15px;
     color: #fff;
+    border: none;
+}
+
+#resume-button-1{
+    background-color: black;
+    border: none;
 }
 
 #resume-link-1{
