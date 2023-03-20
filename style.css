@@ -458,7 +458,7 @@ form .btn2 {
     display: block;
     height: 50px;
     width: 250px;
-    background: #ff004f;
+    background:black;
     text-align: center;
     padding: 5px 10px;
     /* position: absolute; */
@@ -473,7 +473,7 @@ form .btn2 {
 }
 
 #resume-link-1{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #contact-phone ,#contact-email{
