@@ -62,19 +62,17 @@ body {
 }
 
 #home {
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     /* background-image: url(images/slazzer-edit-image.png); */
-    margin-top: 150px;
+    margin-top: 100px;
     background-size: cover;
     background-position: center;
-    min-height: 300px;
-    /* border: 1px solid greenyellow; */
     scroll-margin: 100px;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 12%;
     margin-top: 0px;
 }
 
@@ -96,10 +94,8 @@ nav {
 }
 /* --------------------skill-card-name------------------ */
 .skills-card-name{
-    margin: 10px;
     text-align: center;
     font-size: 25px;
-    /* background-color: #060606; */
     padding: 10px 5px;
 }
 
@@ -159,10 +155,13 @@ nav ul li a:hover::after {
     padding-top: 50px;
 }
 
-.header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+.header-text p {
+    margin-top: 10px;
+}
 
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 20px;
 }
 
 .header-text h1 span {
@@ -178,30 +177,30 @@ nav ul li a:hover::after {
 
 /* ---------------------about------------------ */
 #about {
-    padding: 80px 0;
+    /* padding: 50px 0; */
+    margin-top: 50px;
     color: #ababab;
     scroll-margin: 100px;
 }
 
 .row {
+    width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .about-col-1 {
     flex-basis: 35%;
-
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 75%;
     border-radius: 15px;
 }
 
 .about-col-2 {
     flex-basis: 60%;
-
 }
 
 .sub-title {
@@ -263,9 +262,14 @@ nav ul li a:hover::after {
 
 /* -----------------------------skills-------------------------- */
 #skills {
-    padding: 50px 0;
+    padding: 0px 0;
     scroll-margin: 100px;
+}
 
+.sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-list {
@@ -273,27 +277,36 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-
 }
 
 .skill {
     border-radius: 10px;
+    display: block;
     position: relative;
     overflow: hidden;
     text-align: center;
     align-items: center;
+    /* justify-content: center;
+    background-color: #b54769; */
 }
+
+/* #skillimgcont{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
 
 .skill img {
     align-items: center;
-    width: 75%;
+    /* width: 75%; */
     border-radius: 10px;
-    display: block;
-    height: 20vh;
+    /* height: 20vh; */
     justify-content: center;
-    margin-left: 20px;
-
+    margin-left: 0px;
 }
+
+
 
 
 /* ---------------------projects-section------------------------------ */
@@ -304,8 +317,7 @@ nav ul li a:hover::after {
 
 .project-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(500px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -322,12 +334,12 @@ nav ul li a:hover::after {
     border-radius: 10px;
     display: block;
     height: 50vh;
-
 }
 
 .project a {
     text-align: center;
     margin: auto;
+    justify-content: center;
 }
 
 /* ----------------------github section---------------------------------- */
@@ -498,20 +510,35 @@ nav .fas {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-   
+@media screen and (min-width: 100px) and (max-width: 699px){
 
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-
+    #home {
+        width: auto;
+        height: auto;
+        margin-top: 50px;
+        background-size: cover;
+        background-position: center;
+        scroll-margin: 50px;
+        display: grid;
     }
 
+    .header-text {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    .header-text p {
+        font-size: 20px;
+    }
 
     .header-text h1 {
-
         font-size: 30px;
-
+    }
+    
+    .imk img{
+        width: 80%;
+         height: 50vh; 
+        border-radius: 15px;
     }
 
     nav .fas {
@@ -551,11 +578,11 @@ nav .fas {
         font-size: 40px;
     }
 
-    .about-col-1,
+     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
 
-    }
+    } 
 
     .about-col-1 {
         margin-bottom: 30px;
@@ -575,4 +602,11 @@ nav .fas {
         font-size: 14px;
     }
 
+    .project img {
+         width: 100%;
+        border-radius: 10px;
+        display: block; 
+        height: 80vh;
+    }
 }
+
